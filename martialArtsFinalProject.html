@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Martial Arts</title>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
+    }
+    h1 {
+      text-align: center;
+      font-weight: 13px;
+      color: #828768;
+      padding: 15px;
+    }
+
+    h2 {
+      text-align: center;
+      border-radius: 25px;
+      margin: 15px;
+      border: 5px solid white;
+      padding: 15px;
+      color: #828768;
+      font-size: 20px;
+    }
+    img {
+      margin: 0 auto;
+      display: block;
+      border-radius: 15px;
+      padding: 15px;
+      width: 300px;
+    }
+    p {
+      color: #828768;
+      line-height: 1.5;
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+      background: #f8b400;
+      padding: 15px;
+      transition: all 200 ease-in-out;
+      border: none;
+      font-weight: 10px;
+      border-radius: 5px;
+      box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+    button:hover {
+      cursor: pointer;
+      opacity: 0.9;
+      text-decoration: underline;
+    }
+
+    .container {
+      margin: 0 auto;
+      max-width: 600px;
+    }
+    .jiu-jitsu {
+      padding: 15px;
+    }
+
+    .learn-more {
+      padding-top: 15px;
+      margin: 0 auto;
+      text-align: center;
+      color: #828768;
+      text-decoration: none;
+      font-size: 12px;
+    }
+    .learn-more:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Martial Arts</h1>
+      <hr />
+      <h2>Specifically Jiu-Jitsu & Muay Thai</h2>
+
+      <img
+        src="https://th.bing.com/th/id/OIP.0kta9nSxNWohGTTC9UiIJAHaE8?pid=ImgDet&rs=1"
+        alt="Muay-Thai"
+        width="300"
+      />
+      <img
+        src="https://2rdrtx4bt29lo91s31mjhkji-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/Martial-arts-combatives-self-defense-schools-training-sports-traditional-1.jpg"
+        alt="Jiu-Jitsu"
+        width="300"
+      />
+      <p>
+        <em> <strong>Martial Arts</strong> </em> isn't what I would consider a
+        sport, but a way of life. I started training Muay Thai when I was around
+        fifteen years old. Currently I am twenty, soon to be twenty-one. I began
+        training in Jiu-Jitsu almost a year ago now. Training in Martial Arts
+        has become such a huge part of my life that I cannot imagine my life
+        without it.
+      </p>
+      <br />
+      <a
+        href="http://www.wolfpackboxingclubmiami.com/muay-thai-boxing-kickboxing-classes/"
+        class="learn-more"
+        >Learn More</a
+      >
+      <span> <button class="sign-up-button">Sign up today😁</button> </span>
+      <br />
+
+      <p class="footer">
+        This page was built by
+        <span> <a href="https://www.shecodes.io"> Ayanna Fofana</a> </span>
+      </p>
+    </div>
+    <script>
+      function signUp() {
+        let firstName = prompt("What is your first name?");
+        let email = prompt("What is your email?");
+        let martialArt = prompt("Which Martial Art were you interested in?");
+
+        if (martialArt === "jiu-jitsu" || martialArt === "muay-thai") {
+          alert(firstName + " " + ", nice choice!" + "❤️");
+        } else {
+          alert(
+            "Thank you" + " " + firstName + ", we will be in touch soon!👍"
+          );
+        }
+      }
+
+      let signUpButton = document.querySelector(".sign-up-button");
+      signUpButton.addEventListener("click", signUp);
+    </script>
+  </body>
+</html>
